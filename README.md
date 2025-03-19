@@ -6,6 +6,15 @@ Data source: [https://www.kaggle.com/competitions/house-prices-advanced-regressi
 
 ---
 
+## Table of Contents
+- [Methods Used](#methods-used)
+- [EDA and Feature Selection](#eda-and-feature-selection)
+- [Result and Reports](#result-and-reports)
+- [Model Insights](#model-insights)
+- [Learnings and Takeaways](#learnings-and-takeaways)
+
+---
+
 ## Methods used
 ### **Data Preprocessing**
 - Setting thresholds to filter features and replace null values
@@ -81,7 +90,8 @@ We tested five different models and submitted predictions to Kaggle. The scores 
 
 <img width="604" alt="score" src="https://github.com/xhartonx/House_Price_Prediction/blob/main/image/model%20performence.jpg">
 
-### Model Insights
+## Model Insights
+
 1. **Linear Regression**: Performed best with Lasso-selected features.
 2. **Random Forest**: Struggled with feature importance and overfitting.
 3. **XGBoost**: Performed well after extensive parameter tuning; optimal learning rate found at 0.0082.
