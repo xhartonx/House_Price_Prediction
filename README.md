@@ -1,6 +1,6 @@
 # House Price Prediction Project
 
-This project is focused on house price prediction using advanced regression techniques. We analyze a dataset from Kaggle, apply data preprocessing, exploratory data analysis, feature engineering, and various machine learning models, including Linear Regression, Random Forest, XGBoost, Keras, and Torch. The goal is to identify the most appropriate model to apply in accurate price predictions and to comprehend key factors influencing the prices of homes.
+This project is focused on house price prediction using advanced regression techniques. We analyze a dataset from Kaggle, apply data preprocessing, exploratory data analysis, feature engineering, and various machine learning models. The goal is to identify the most appropriate model to apply in accurate price predictions and to comprehend key factors influencing the prices of homes.
 
 Data: https://www.kaggle.com/competitions/house-prices-advanced-regression-
 
