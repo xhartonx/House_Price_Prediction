@@ -79,41 +79,28 @@ Houses equipped with central air conditioning systems consistently exhibit highe
 
 We tested five different models and submitted predictions to Kaggle. The scores are as follows:
 
-<img width="604" alt="score" src="https://github.com/xhartonx/House_Price_Prediction/blob/main/image/model.jpg">
+<img width="604" alt="score" src="https://github.com/xhartonx/House_Price_Prediction/blob/main/image/model%20performence.jpg">
 
-## Model Type:
-
-1. Linear regression model
-We employed linear regression, leveraging the feature set curated by the Lasso model. This strategic approach yield the most favorable performance on Kaggle, surpassing the efficacy of all other models we explored in our analysis.
-
-2. Random Forest
-Despite diligent optimization efforts, the resultant score yirld was 1.01025, indicating a notable performance gap compared to the top-performing model. This disparity underscores the importance of our meticulous model selection and parameter tuning processes in pursuit of optimal performance.
-
-3. XGboost
-The first XGBoost model we used only tuned the learning rate parameter. We attempted to find the optimal learning rate within the range of 0.0001 to 0.05.
-However, even after finding the best one, the score on Kaggle remained very high (1.02). Consequently, we decided to tune more parameters, as found in this code sample. After adding additional parameter settings, we attempted to tune the learning rate once again, The following graph depicts the relationship between learning rate and MAE. We concluded that the optimal learning rate is 0.008199999999999999, and retrained the model achieved a better score than the previous attempt.
-
-<img width="435" alt="learning rate" src="https://github.com/user-attachments/assets/fcdaed10-d1d8-41c9-aa9d-fd7281e928db">
-
-4. Keras
-Keras has the second-highest score among all the models we tried. We tuned parameters such as optimizer, loss function, units_layer, activation, batch size, and validation split to find the combination with the smallest MAE. The following table indicates the top 15 combinations out of 217, which have the least MAE.
-According to these results, we observed some common settings, such as optimizer = SGD, loss function = mean_squared_error, and activation = sigmoid. With these findings, we retrained the Keras model using the optimal combination and achieved the second-highest score.
-
-<img width="603" alt="Keras" src="https://github.com/user-attachments/assets/c0d53ff2-1f84-4441-a17a-d6bc54b00184">
-
-5. Torch
-Our implementation of the Torch model employed Rectified Linear Unit (ReLU) activation functions across two layers, with the Adam optimizer and Mean Squared Error (MSE) as the loss function. Despite these strategic choices, the performance on Kaggle fell short of expectations.
+### Model Insights
+1. **Linear Regression**: Performed best with Lasso-selected features.
+2. **Random Forest**: Struggled with feature importance and overfitting.
+3. **XGBoost**: Performed well after extensive parameter tuning; optimal learning rate found at 0.0082.
+4. **Keras**: Achieved the second-best score after hyperparameter tuning.
+5. **Torch**: Underperformed compared to other models despite optimized layers and activation functions.
 
 ---
 
-## Learning and Takeaways
+## Learnings and Takeaways
 
-### Main Challenge
-- Our team found data cleaning to be the most complex part of the project. It involves identifying useful data from a large dataset. We started with Exploratory Data Analysis (EDA), using charts to discover important insights. Then, in the feature engineering phase, we created new variables and used a Lasso model to help us select features. This was the most time-consuming part because improving model accuracy through parameter tuning cannot compare to the importance of starting with clean, well-prepared data.
+### Challenges Faced
+- **Data Cleaning**: The most time-consuming part, as properly processed data was crucial for model performance.
+- **Feature Selection**: Even with Lasso, important features might have been overlooked.
+- **Model Optimization**: Tuning parameters did not always yield significant improvements.
 
-### Second Challenge: Modeling
-- We built several models, including Keras, Random Forest, and Linear Regression, but hit a bottleneck where no amount of parameter tuning significantly improved our accuracy. We identified a few potential reasons. One might be less than ideal feature selection. Even with Lasso helping us choose features, we might have missed some important ones or incorrectly excluded them. Additionally, our feature engineering might not have been very effective, missing key interactions or nonlinear relationships.
+### Future Improvements
+- Explore advanced feature selection techniques such as model-based feature ranking (e.g., feature importance from Random Forest).
+- Implement polynomial and interaction features to capture complex relationships.
+- Consider deep learning approaches for further model improvement.
 
-### Solutions for improvement
-- To enhance our model's performance, we plan to reevaluate our feature selection strategy, possibly incorporating more advanced techniques like model-based feature selection (e.g., feature importance from Random Forests). We also plan to explore more feature engineering techniques, such as polynomial features and interaction features, to better capture complex patterns.
-By implementing these steps, we hope to overcome current challenges, improve model accuracy, and successfully meet our project goals.
+By applying these improvements, we aim to enhance accuracy, overcome challenges, and refine our house price prediction models.
+
