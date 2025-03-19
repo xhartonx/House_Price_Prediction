@@ -112,5 +112,4 @@ We tested five different models and submitted predictions to Kaggle. The scores 
 - Implement polynomial and interaction features to capture complex relationships.
 - Consider deep learning approaches for further model improvement.
 
-By applying these improvements, we aim to enhance accuracy, overcome challenges, and refine our house price prediction models.
 
