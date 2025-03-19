@@ -7,55 +7,68 @@ Data source: [https://www.kaggle.com/competitions/house-prices-advanced-regressi
 ---
 
 ## Methods used
-- **Data preprocessing**: Set the threshold to filter out features and replace null values. with in and
-using like or deletion.
-- **Exploratory Data Analysis (data visualization)**: Creating histograms, box plots, scatter plots, heatmaps, ans pair plots to explore the distribution of data, identify outliers, and understand relationships between variables.
-- **Feature Engineering**: Creating new Features from existing ones or transforming feature to better represent the inderlying data.
-- **Correlation Analysis**: Calculating correlation coefficients between variables to identify potential linear or monotonic relationships. Visualizing correalations using heatmaps to provide insights into varable relationships.
-- **Feature Importance**: Assessing the importance of features using techniques like correlation analysis, feature selection algorithms, or machine learning models.
-- **Identifying Patterns**: Searching for patterns or trends in the data that may provide insights into underlying phenomena or relationships.
-- **Building models** (Linear regression, Random Forest, XGboost, Keras, Torch)
+### **Data Preprocessing**
+- Setting thresholds to filter features and replace null values
+- Handling missing values in numerical and categorical columns using imputation or deletion
+
+### **Exploratory Data Analysis (EDA)**
+- Visualizations: Histograms, Box Plots, Scatter Plots, Heatmaps, Pair Plots
+- Identifying data distributions, outliers, and relationships between variables
+
+### **Feature Engineering**
+- Creating and transforming features to better represent the data
+
+### **Correlation Analysis**
+- Calculating correlation coefficients to identify potential relationships
+- Visualizing correlations with heatmaps
+
+### **Feature Importance**
+- Using correlation analysis and machine learning models to determine key features
+
+### **Building Models**
+- **Algorithms used**: Linear Regression, Random Forest, XGBoost, Keras, Torch
+
 
 ---
 
 ## EDA and Feature Selection
 
-### Correlation Heatmap Analysis
+### **Correlation Heatmap Analysis**
 The heatmap reveals strong correlations between sale prices and factors like overall quality and living area size.
 
 <img width="509" alt="heatmap" src="https://github.com/user-attachments/assets/964a7466-d697-4641-9b58-8ea20641a6a8">
 
-### Scatter Plot
+### **Scatter Plot**
 Scatter plot showing the relationship between living area size and sale price.
 
 <img width="481" alt="scatterplot" src="https://github.com/user-attachments/assets/d9d5c00e-55f1-4ef7-b606-6f991c288afa">
 
-### Boxplot of Sale price by Sale Type
+### **Boxplot of Sale price by Sale Type**
 Boxplot highlights a clear preference for newly built houses, leading to notably higher sale prices.
 
 <img width="544" alt="boxplot1" src="https://github.com/user-attachments/assets/00994238-c1bc-4be7-aef3-f9fc595d50a6">
 
-### Scatter plot
+### **Scatter plot**
 Demonstrating string relationship between above grade living area square feet and sales price depicted in the heatmap. The points align closely aling a discernible trend line, indicating a clear positive correlation between the variables.
 
 <img width="481" alt="scatterplot" src="https://github.com/user-attachments/assets/4d7e71fa-7927-4012-b854-775e07053984">
 
-### Bar chart
+### **Bar chart**
 The bar chart indicates that house with public utilities command higher sale prices. This can be attributed to the convenience, reliability, and regulatory compliance associated with such properties.
 
 <img width="519" alt="bar chart" src="https://github.com/user-attachments/assets/6c447d68-b0eb-4d2d-895c-2178f7dae3d4">
 
-### Bar chart and Scatter plot
+### **Bar chart and Scatter plot**
 We uncover a strong correlation between overall quality and sales price. The bar chart highlights neighborhoods like NoRidge, NridgHt, and StoneBr with the highest quality ratings, suggesting that properties in these areas have the highest sale prices due to their superior quality.
 
 <img width="617" alt="bar chart   scatter plot" src="https://github.com/user-attachments/assets/0e5eab08-eb96-4b9f-a3f7-547acdb698c8">
 
-### Bar chart and Violin plot
+### **Bar chart and Violin plot**
 From the bar chart above, it's evident that house equipped with Gas A heating boast the highest quality ratings. Moreover, there's a notable prevalence of homes ultilizing Gas A heating. Consequently, it can be inferred that properties featuring Gas A heating systems tend to command the highest sale prices.
 
 <img width="624" alt="violin" src="https://github.com/user-attachments/assets/44f30002-5d1f-46c3-8c5f-7a5db2b931f2">
 
-### Box plot for Central air condition and Sale price
+### **Box plot for Central air condition and Sale price**
 Houses equipped with central air conditioning systems consistently exhibit higher sale prices, suggesting a strong positive correlation between the presence of central air conditioning and the sale proce. This finding underscores the importance of central air conditioning as a desirable feature in the real estate market.
 
 <img width="543" alt="boxplot2" src="https://github.com/user-attachments/assets/82910b91-98b3-402d-8696-78f71710bbab">
@@ -64,7 +77,7 @@ Houses equipped with central air conditioning systems consistently exhibit highe
 
 ## Result and Reports
 
-- We ultilized five model specification and submit the prediction, the scores from kaggle are as follows:
+We tested five different models and submitted predictions to Kaggle. The scores are as follows:
 
 <img width="604" alt="score" src="https://github.com/user-attachments/assets/d47b9bb9-3440-462d-87da-07d8af8f35b9">
 
