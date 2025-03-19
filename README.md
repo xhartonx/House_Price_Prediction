@@ -79,7 +79,7 @@ Houses equipped with central air conditioning systems consistently exhibit highe
 
 We tested five different models and submitted predictions to Kaggle. The scores are as follows:
 
-<img width="604" alt="score" src="https://github.com/user-attachments/assets/d47b9bb9-3440-462d-87da-07d8af8f35b9">
+<img width="604" alt="score" src="https://github.com/xhartonx/House_Price_Prediction/blob/main/image/model.jpg">
 
 ## Model Type:
 
